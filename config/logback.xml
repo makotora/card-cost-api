@@ -11,7 +11,7 @@
 	</appender>
 
 	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>./log/${HOSTNAME}.log</File>
+		<File>./log/server.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<FileNamePattern>./log/server.%d{yyyy-MM-dd}.log</FileNamePattern>
 			<maxHistory>90</maxHistory>
